@@ -1,0 +1,47 @@
+
+#icono-posicion {
+    position: relative;
+    width: 300px;
+    height:300px;
+    left: 150px;
+    top:150px;
+   
+
+}
+
+#titulo-icono{
+    position: absolute;
+    left: 100px;
+    top:200px; 
+}
+
+#logo-nombre{
+    font-family: fantasy;
+    font-size: 40px;
+}
+
+#texto-principal{
+    font-family: fantasy;
+    font-size: 20px;
+    position: absolute;
+    width: 500px;
+    height: 298px;      
+    top:212px;
+    left:550px;
+  
+}
+
+#btn-inicio{
+    position: absolute;
+    left: 200px;
+    top:240px; 
+}
+
+#btn-tamano{
+    width: 100px;
+    height: 40px;  
+    font-family: fantasy;
+    border-radius:8px;      
+    background-color: #A2DFE5; 
+}
+
