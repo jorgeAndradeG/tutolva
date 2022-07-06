@@ -34,4 +34,6 @@ Route::get('verTolva', function () {
     return view('tolva/verTolva');
 });
 
+Route::post('/crudadmin/eliminar',[crudAdminController::class, 'eliminar']);
+
 require __DIR__.'/auth.php';

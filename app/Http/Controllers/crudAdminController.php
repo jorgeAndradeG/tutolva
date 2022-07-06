@@ -91,6 +91,8 @@ class crudAdminController extends Controller
      */
     public function edit($id)
     {
+        $tolva = Tolva::findOrfail($id);
+        return view("admin.edit-tolvas", with(["tolva"=>$tolva]));
         //
     }
 
@@ -103,6 +105,30 @@ class crudAdminController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $request->validate([
+            'direccion'=>'required|string|max:255',
+            'hora_inicio'=>'required',
+            'hora_fin'=>'required',
+            'fecha_inicio'=>'required',
+            'fecha_fin'=>'required',
+        ]);
+        
+        if($request['estado'] == 'on'){
+            $estado = 1;
+        }else{
+            $estado = 0;
+        }
+
+        $tolva = Tolva::findOrfail($id);
+        $tolva->direccion = $request['direccion'];
+        $tolva->hora_inicio = $request['hora_inicio'];
+        $tolva->hora_fin = $request['hora_fin'];
+        $tolva->fecha_inicio = $request['fecha_inicio'];
+        $tolva->fecha_fin = $request['fecha_fin'];
+        $tolva->estado = $estado;
+
+        $tolva->save();
+        return redirect('/crudadmin');
         //
     }
 
@@ -115,5 +141,10 @@ class crudAdminController extends Controller
     public function destroy($id)
     {
         //
+    }
+    public function eliminar(Request $request ){
+        $tolva = Tolva::destroy($request['modalid']);
+        return redirect ('/crudadmin');
+
     }
 }
