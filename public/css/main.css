@@ -57,9 +57,9 @@ li a.active, li a:hover{
 
 #icono{ 
     float:left;
-    line-height: 90px;
-    margin-left: 40px;
-    cursor: pointer;
+    line-height: 120%;
+    margin-left: 5%;
+    color:green;
 }
 
 #logo{
@@ -68,7 +68,6 @@ li a.active, li a:hover{
     float:left;
     line-height: 60px;
     margin-left: 30px;
-    cursor: pointer;
 }
 
 .container{
@@ -78,8 +77,8 @@ li a.active, li a:hover{
 
 .card {
     background: white;
-    width: 270px;
-    height: 400px;
+    width: 400px;
+    height: 700px;
     margin: 10px;
     border-radius: 15px;
 }
@@ -104,13 +103,14 @@ li a.active, li a:hover{
 
 .container .card{
     width: 330px;
-    height: 430px;
+    height: 550px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0,0,0, 0.2);
     overflow: hidden;
     margin: 20px;
     text-align: center;
     transition: all 0.25;
+    
 }
 
 .container .card img{
@@ -119,8 +119,9 @@ li a.active, li a:hover{
 }
 
 .container .card p{
-    float:left;
-    margin-left: 30px;
+    padding:5px;
+    display:flex;
+    margin-left: 20px;
     font-family: fantasy;
 }
 
@@ -134,3 +135,7 @@ li a.active, li a:hover{
     border-radius: 20px;
 }
 
+a:visited, a:link{
+    text-decoration:none !important;
+    color:black;
+}

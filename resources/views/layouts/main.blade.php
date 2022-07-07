@@ -12,19 +12,19 @@
 </head>
 <body>
     <nav>
-        <label for="" class="" id="icono">
-        <i class="fa-solid fa-recycle fa-3x"></i>
-        </label>
-        <label for="" class="" id="logo">Tú Tolva</label>
+      
+        <i id="icono" class="fa-solid fa-recycle fa-3x"></i>
+      
+        <a id="logo" href="/">Tú Tolva</a>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
         <i class="fa-solid fa-bars"></i>
         </label>
         <ul>
-        <li class="active"><a href="#">Inicio</a></li>
-        <li><a href="#">Nosotros</a></li>
+        <li class="active"><a href="/">Inicio</a></li>
+        <!-- <li><a href="#">Nosotros</a></li>
         <li><a href="#">Contacto</a></li>
-        <li><a href="#">Redes Sociales</a></li>
+        <li><a href="#">Redes Sociales</a></li> -->
         </ul>
     </nav>
     @yield('content')

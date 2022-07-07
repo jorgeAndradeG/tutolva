@@ -44,7 +44,6 @@
                     $fecha_inicio = date_format($fecha_inicio,"d-m-Y");
                     $fecha_fin = new DateTime($tolva->fecha_fin);
                     $fecha_fin = date_format($fecha_fin,"d-m-Y")
-                
                 @endphp
                 <th>{{$hora_inicio}}</th>
                 <th>{{$hora_fin}}</th>

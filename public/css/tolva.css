@@ -23,4 +23,16 @@
     left:550px;
     font-family: fantasy;
     font-size: 30px;
+    padding:5px;
+    flex-flow: column;
+
+}
+#contenido a{
+    font-family: fantasy;
+    display: inline-block;
+    line-height: 30px;
+    margin: 190px 280px;
+    background-color: #A2DFE5;
+    padding:10px 20px;
+    border-radius: 20px;
 }

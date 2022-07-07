@@ -18,7 +18,7 @@
                  Muchas gracias por visitarnos 😊♻️.
               </p>
               <div id="btn-inicio">
-                  <button id="btn-tamano">Ingresar</button>
+                 <a href="/listaTolva"><button id="btn-tamano">Ingresar</button></a> 
               </div>
           </div>   
 @endsection
